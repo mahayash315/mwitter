@@ -79,7 +79,7 @@ class User extends Model implements JsonSerializable {
 			$result = $stmt->fetch(PDO::FETCH_ASSOC);
 			return self::byId($result['uid']);
 		} else {
-			throw new RecordNotFoundException('User not found with username="'.$username.'", password="'.$password.'"');
+			throw new RecordNotFoundException('User not found with username="'.$username.'"');
 		}
 	}
 
@@ -90,7 +90,7 @@ class User extends Model implements JsonSerializable {
 			$result = $stmt->fetch(PDO::FETCH_ASSOC);
 			return self::byId($result['uid']);
 		} else {
-			throw new RecordNotFoundException('User not found with username="'.$username.'", password="'.$password.'"');
+			throw new RecordNotFoundException('User not found with token="'.$token.'"');
 		}
 	}
 
