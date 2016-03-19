@@ -1,8 +1,8 @@
---- DROP
+-- DROP
 DROP TABLE IF EXISTS `auths`;
 
 
---- TABLE CREATION
+-- TABLE CREATION
 CREATE TABLE `auths` (
   `uid`				INT(16) PRIMARY KEY,
   `username`		VARCHAR(45) NOT NULL,

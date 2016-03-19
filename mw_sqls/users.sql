@@ -1,8 +1,8 @@
---- DROP
+-- DROP
 DROP TABLE IF EXISTS `users`;
 
 
---- TABLE CREATION
+-- TABLE CREATION
 CREATE TABLE `users` (
   `uid`			INT(16) PRIMARY KEY AUTO_INCREMENT,
   `first_name`	VARCHAR(45) NULL,

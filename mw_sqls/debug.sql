@@ -1,8 +1,8 @@
---- DROP
+-- DROP
 DROP procedure IF EXISTS `debug_msg`;
 
 
---- DEBUG
+-- DEBUG
 CREATE PROCEDURE debug_msg(msg VARCHAR(255))
 BEGIN
 	SET @enabled = TRUE;

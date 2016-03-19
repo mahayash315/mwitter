@@ -1,10 +1,10 @@
---- DROP
+-- DROP
 DROP table IF EXISTS `tweet_relations`;
 DROP procedure IF EXISTS `handle_tweet_insert`;
 DROP procedure IF EXISTS `handle_tweet_delete`;
 
 
---- TABLE CREATION
+-- TABLE CREATION
 CREATE TABLE `tweet_relations` (
 	tid		INT(11) PRIMARY KEY,
 	lft 	DECIMAL(21,0),
@@ -12,7 +12,7 @@ CREATE TABLE `tweet_relations` (
 );
 
 
---- Procedure to insert a tweet
+-- Procedure to insert a tweet
 DELIMITER //
 CREATE PROCEDURE `handle_tweet_insert`(
 	IN _tid INT,
@@ -50,7 +50,7 @@ END
 DELIMITER ;
 
 
---- Procedure to delete a tweet
+-- Procedure to delete a tweet
 DELIMITER //
 CREATE PROCEDURE `handle_tweet_delete`(
 	IN _tid INT
