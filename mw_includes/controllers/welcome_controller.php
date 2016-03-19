@@ -37,7 +37,7 @@ class WelcomeController extends SessionedController {
 		}
 
 		// 転送
-		$url = DOCUMENT_PATH;
+		$url = DOCUMENT_PATH."/";
 		header("Location: ${url}");
 	}
 
@@ -62,7 +62,7 @@ class WelcomeController extends SessionedController {
 		$_SESSION['uid'] = $user->uid;
 
 		// 転送
-		$url = DOCUMENT_PATH;
+		$url = DOCUMENT_PATH."/";
 		header("Location: ${url}");
 	}
 
