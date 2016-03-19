@@ -8,7 +8,7 @@ define('DOCUMENT_PATH',
 define('INCLUDE_ROOT', DOCUMENT_ROOT.'/mw_includes');
 define('THEME_DIR', DOCUMENT_ROOT.'/mw_themes');
 define('DB_TYPE', 'mysql');
-define('DB_HOST', 'localhost:3306');
+define('DB_HOST', 'localhost');
 define('DB_USER', 'mwitter');
 define('DB_PASS', 'mwitter');
 define('DB_NAME', 'mwitter');
